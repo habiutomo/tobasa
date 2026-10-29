@@ -1,0 +1,21 @@
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+
+<FilesMatch "^\.env">
+    Require all denied
+</FilesMatch>
+
+<FilesMatch "^(artisan|composer\.(json|lock)|package(-lock)?\.json|phpunit\.xml|clearcache\.php)$">
+    Require all denied
+</FilesMatch>
+
+<FilesMatch "\.(sql|sqlite|sqlite3|db|log)$">
+    Require all denied
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(app|bootstrap|config|database|resources|routes|storage|tests|vendor)(/|$) - [F,L]
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>

@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Arahkan semua request web ke folder public/ (Laravel)
+    # File ini berada di root folder /antrian pada hosting.
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>

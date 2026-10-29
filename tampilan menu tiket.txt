@@ -1,0 +1,9 @@
+Klaster 1 : (Administrasi)
+
+Klaster 2 : (KIA, Remaja, Imunisasi)
+
+Klaster 3 : (Usia dewasa dan lansia)
+
+Klaster 4 : (Penyakit Menular)
+
+Lintas Klaster : (Gimul, Apotik, IGD, Laboratorium)
